@@ -6,8 +6,8 @@ Check more detail in my blog post [Django Multiple Files Upload](https://blueswe
 
 ## Requirements
 
-1. django==3.0.5
-2. djangorestframework==3.11.0
+1. django>=3.0.7
+2. djangorestframework>=3.11.0
 
 ## Usage
 
@@ -20,5 +20,5 @@ Check more detail in my blog post [Django Multiple Files Upload](https://blueswe
     python manage.py run server 6001
     ````
 
-2. Upload files in [localhost:6001/upload/](localhost:6001/upload/)
-3. Check files data and download by result's url in [localhost:6001/api/files/](localhost:6001/api/files/)
+2. Upload files in [http://localhost:6001/upload/](http://localhost:6001/upload/)
+3. Check files data and download by result's url in [http://localhost:6001/api/files/](http://localhost:6001/api/files/)
