@@ -19,8 +19,19 @@ from django.conf.urls import include
 from upload.views import upload
 from django.conf import settings
 from django.conf.urls.static import static
+from myapp import views
 
 urlpatterns = [
+    path('home', views.home, name='home'),
+    path('', views.home, name='home'),
+    path('signin/',views.signin, name='signin'),
+    path('signout/',views.signout, name='signout'),
+    path('signup/',views.signup, name='signup'),
+    path('profile/',views.profile, name='profile'),
+
+    # path('views/',views.view,name='views'),
+
+    path('view/', views.file_list, name='file_list'),
     path("admin/", admin.site.urls),
     path("upload/", upload),
     path("api/", include("upload.urls")),
